@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mio caffè</title>
+    <link rel="icon" href="./images/mug-hot-solid.svg">
+    <script src="/prefixFree.js"></script>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&display=swap" rel="stylesheet">  
+</head>
+<body>
+   
+    <div class="tex_containner-inicio">
+        
+        <img src="./images/montañar.png" alt="" id="montaña1">
+        <img src="./images/ave1.png" alt="" id="ave1">
+        <img src="./images/campesino.png" alt="" id="campesino">
+        <img src="./images/ave2.png" alt="" id="ave2">
+        <img src="./images/cafetal2.png" alt="" id="montaña2">
+       
+        <h2 class="text_inicio" id="text">TE INVITAMOS A <br><span>DISFRUTAR EL MOMENTO</span></h2>    
+    </div>
+    
+    <script type="text/javascript">
+
+  
+        let montaña1 = document.getElementById("montaña2");
+        let  ave1 = document.getElementById("ave1");
+        let campesino= document.getElementById("campesino");
+        let  ave2 = document.getElementById("ave2");
+        let montaña2 = document.getElementById("montaña2");
+        let text = document.getElementById("text");
+    
+        window.addEventListener("scroll", function(){
+            var value = window.scrollY;
+    
+            montaña1.style.top = -value * 3 + "px";
+            ave1.style.left = -value * 0.5 + "px";
+            campesino.style.bottom = -value * 1 + "px";
+            ave2.style.top = value * 0.20 + "px";
+            montaña2.style.top = value * 0.10 + "px";
+            text.style.top = value * 2 + "px";
+        })
+       
+    
+    </script>
+
+    <div class="containner_content">
+
+        <div class="containner_header"> 
+            
+            <ul class="nav_containner">
+                
+                <a href="#ABOUT US"> <img src="./images/logo_large.png" alt="" class="logo"></a>
+                <li><a href="#">HOME</a></li>
+                <li><a href="#ABOUT US">NOSOTROS</a></li>
+                <li><a href="#PRODUCTS">PRODUCTOS</a></li>
+                <li><a href="#TEAM">BARISTAS</a></li>
+                <li><a href="#CONTACT US">ESTAMOS EN </a></li>
+                <div class="containner_aboutUs_img"><img src="./images/cafeSemilla.png" alt=""></div>  
+
+            </ul>
+
+            <div class="containner_aboutUs">
+                <h2 id="ABOUT US"><a href="#">NOSOTROS</a></h2>
+                <p>
+                       Somos una empresa enamorados del café y si estas aquí ¡eres de los nuestros! por eso prometemos ofrecerte la mejor experiencia en nuestra cafetería y los mejores productos de café 100% colombiano <span>para que disfrutes el momento </span><br>
+                       estamos para darte la mejor calidad del café colombiano y la mejor calidez  de servicio por nuestro equipo barista.
+                </p>
+            </div>
+        </div>
+       
+    </div>
+    
+    <!--contenedor productos-->
+       <h2 id="PRODUCTS" class="tittle_products"><a href="#"> PRODUCTOS  <img src="./images/beenCoffee.png" alt="" class="title_img"></a></h2 >
+
+        <div class="contenedor">
+         
+            <div class="contenedor_galeria">
+              <p> Origen Cundinamarca <br> Café intenso, con notas achocolatadas,variedad colombia <br> aroma intenso. <br> cuerpo medio-alto <br> 500gr</p>
+              <figure class="tarjeta_galeria">
+              </figure>
+            </div> 
+          
+            <div class="contenedor_galeria">
+              <p>Origen Huila<br> balanceado, con notas a caramelo y panela <br>cuerpo medio <br>Grano o molido 450gr</p>
+              <figure class="tarjeta_galeria">
+              </figure>
+            </div> 
+          
+            <div class="contenedor_galeria">
+              <p>Origen Huila Alta montaña<br> balanceado, con notas sabor a naranja madura y caramelo  <br>cuerpo alto <br> Grano o molido 459gr</p>
+              <figure class="tarjeta_galeria">
+              </figure>
+            </div> 
+          
+            <div class="contenedor_galeria">
+              <p>Origen Quindío - Café Especial Orgánico <br> balanceado, con notas a frutos rojos <br>cuerpo medio <br>Grano o molido 500gr</p>
+              <figure class="tarjeta_galeria">
+              </figure>
+            </div> 
+
+            <div class="contenedor_galeria">
+              <p>Origen Cundinamarca <br> Café suave  con notas dulces miel y caramelo variedad caturra <br>cuerpo bajo <br>250gr</p>
+              <figure class="tarjeta_galeria">
+              </figure>
+            </div> 
+
+            <div class="contenedor_galeria">
+              <p>Café Blend Especial Quindío <br> Notas intensas achocolatadas <br>cuerpo medio <br>KIT 250gr Molido <br>340gr Molido-Grano </p>
+              <figure class="tarjeta_galeria">
+              </figure>
+            </div> 
+            <!--products 2-->
+                <div class="contenedor_galeria">
+                
+                         <video class="galeria_video" controls>
+                            <source src="./images/videoC1.mp4" type="video/mp4">
+                        </video>
+                  
+                </div> 
+              
+                <div class="contenedor_galeria">
+                   
+                        <video class="galeria_video"  controls >
+                            <source src="./images/videoc2.mp4" type="video/mp4">
+                        </video>
+                  
+                </div> 
+              
+                <div class="contenedor_galeria">
+                    
+                        <video class="galeria_video"   controls >
+                            <source src="./images/videoC3.mp4" type="video/mp4">
+                        </video>
+               </div> 
+                
+        </div>
+     
+   <!--containner team-->
+
+        <h2 id="TEAM" class="tittle_team"><a href="#">BARISTAS
+         <img src="./images/beenCoffee.png"class="title_img" alt=""></a>
+        </h2>
+
+        <div class="containner_Teams">
+ 
+            <div class="teams_card-column">
+
+                <div class="teams_card-img">
+                   <img src="./images/baristaC.jpg" alt="">
+                </div>
+
+               <div class="card_description">
+                    <div class="card_content">
+                      <p> <span>Barista</span> <br> Juan <br> ¿Un largo día?, déjame prepararte tu café ideal</p>
+                    </div>
+               </div>
+               
+            </div>
+
+            <div class="teams_card-column">
+
+                <div class="teams_card-img">
+                  <img src="./images/baristaS.jpg" alt="">
+                </div>
+                
+               <div class="card_description">
+                    <div class="card_content">
+                        <p> <span>Barista</span> <br>Andres <br>Soy un barista 100% enamorado del café, mi método de filtrado por goteo prefido es el Chemex, ¿cuál es el tuyo? </p>
+                    </div>
+               </div>
+            </div>
+
+            <div class="teams_card-column">
+
+                <div class="teams_card-img">
+                <img src="./images/baristaD.jpg" alt="">
+                </div>
+                
+                <div class="card_description">
+                    <div class="card_content">
+                        <p> <span>Barista</span> <br> Aleja <br> ¡Ven a tomar un café con nosotros!, será un gusto verte </p>
+                    </div>
+                </div>
+                
+            </div> 
+        </div>
+        <h2 class="title_contact_us" id="CONTACT US"><a href="#">estamos en </a></h2>
+        <footer class="footer">
+            <div class="containner_footer">
+                <div class="contac_maps">
+                
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15913.665559269588!2d-74.36957004656344!3d4.332651376503242!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f048d789c8609%3A0xda5e4631396bc099!2s%C3%89xito%20Fusagasuga!5e0!3m2!1ses!2sco!4v1632705346739!5m2!1ses!2sco" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+
+                </div>
+                <div class="containner_contantUs">
+                
+                    <div class="footer_card-column">
+
+                        <div class="footer_card-img">
+                        <img src="./images/libreriaCafe.jpg.jpg" alt="">
+                        </div>
+                        
+                    <div class="footer_card_description">
+                            <div class="footer_card_content">
+                                <p> <span>HORARIO</span> <br>lunes a domingo 6am - 7pm </p>
+                                <p>Ven a disfrutar del mejor café 100% colombiano traído de las distintas regiones del país <br>y preparado por profesionales, tenemos variedad de café y variedad de métodos de preparación.<br>¡te esperamos!</p>
+                            </div>
+                    </div>
+                    </div>
+                
+                </div>
+                
+            </div>
+        
+        </footer>
+</body>
+</html>
